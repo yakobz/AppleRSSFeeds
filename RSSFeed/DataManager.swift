@@ -33,6 +33,8 @@ class DataManager: NSObject, NSXMLParserDelegate {
         self.string = ""
 
         super.init()
+        
+        NSTimer.scheduledTimerWithTimeInterval(600, target: self, selector: Selector("updateFeeds"), userInfo: nil, repeats: true)
     }
     
     func updateFeeds() {
