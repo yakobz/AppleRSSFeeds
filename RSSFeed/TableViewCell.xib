@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="150" id="u1v-QU-ML2" customClass="TableViewCell" customModule="RSSFeed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u1v-QU-ML2" id="Xut-MA-G2V">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add to Passbook Badge and Guidlines Now Available" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-hH-KnZ">
+                        <rect key="frame" x="8" y="8" width="377" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="52" id="YI6-iO-fWn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed, 19 Dec 2012 16:15:00 PST" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsz-j4-ZM5">
+                        <rect key="frame" x="8" y="119" width="423" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3e-YU-xlO">
+                        <rect key="frame" x="400" y="59" width="31" height="31"/>
+                        <state key="normal" image="arrow-gray"/>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Passbook is the simplest way for users to store all their passes in one place..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L4D-fb-s4z">
+                        <rect key="frame" x="8" y="68" width="377" height="42.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42.5" id="oH9-HG-oog"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uYo-hH-KnZ" firstAttribute="top" secondItem="Xut-MA-G2V" secondAttribute="topMargin" id="0ex-Yb-FNi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uYo-hH-KnZ" secondAttribute="trailing" constant="46" id="CWJ-ZD-Ly9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gsz-j4-ZM5" secondAttribute="bottom" constant="0.5" id="Dmq-3I-J6R"/>
+                    <constraint firstItem="L4D-fb-s4z" firstAttribute="leading" secondItem="Xut-MA-G2V" secondAttribute="leadingMargin" id="Eq2-hT-RTv"/>
+                    <constraint firstItem="L4D-fb-s4z" firstAttribute="top" secondItem="uYo-hH-KnZ" secondAttribute="bottom" constant="8" id="Gdx-IF-zFK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gsz-j4-ZM5" secondAttribute="bottom" constant="1.5" id="MpB-qC-M3d"/>
+                    <constraint firstItem="gsz-j4-ZM5" firstAttribute="top" secondItem="L4D-fb-s4z" secondAttribute="bottom" constant="8.5" id="ZyI-dJ-ngC"/>
+                    <constraint firstItem="S3e-YU-xlO" firstAttribute="top" secondItem="Xut-MA-G2V" secondAttribute="topMargin" constant="51" id="fhz-cV-rhw"/>
+                    <constraint firstItem="gsz-j4-ZM5" firstAttribute="leading" secondItem="Xut-MA-G2V" secondAttribute="leadingMargin" id="geW-8D-Gfr"/>
+                    <constraint firstItem="S3e-YU-xlO" firstAttribute="leading" secondItem="L4D-fb-s4z" secondAttribute="trailing" constant="15" id="lAD-BT-VY1"/>
+                    <constraint firstItem="uYo-hH-KnZ" firstAttribute="leading" secondItem="Xut-MA-G2V" secondAttribute="leadingMargin" id="trH-VY-GFC"/>
+                    <constraint firstItem="gsz-j4-ZM5" firstAttribute="trailing" secondItem="Xut-MA-G2V" secondAttribute="trailingMargin" id="vfT-lG-b7t"/>
+                    <constraint firstItem="S3e-YU-xlO" firstAttribute="trailing" secondItem="Xut-MA-G2V" secondAttribute="trailingMargin" id="yAq-Q0-gW1"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Dmq-3I-J6R"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailTextView" destination="L4D-fb-s4z" id="Cgf-tk-efE"/>
+                <outlet property="timeLabel" destination="gsz-j4-ZM5" id="btK-KQ-Szh"/>
+                <outlet property="titleTextView" destination="uYo-hH-KnZ" id="GXh-b0-ZQR"/>
+            </connections>
+            <point key="canvasLocation" x="461.5" y="277.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow-gray" width="31" height="31"/>
+    </resources>
+</document>
